@@ -1,0 +1,18 @@
+server {
+        listen 80;
+        root /usr/share/nginx/www;
+        index index.html index.htm;
+        location / {
+               proxy_pass         http://localhost:8080;
+               proxy_set_header   Host       $http_host;
+               proxy_set_header   X-Forwarded-For $remote_addr;
+               proxy_set_header   X-Forwarded-Proto https;
+               proxy_set_header   Authorization "";
+               expires            off;
+               proxy_cache        off;
+               auth_basic            "Basic Auth";
+               auth_basic_user_file  "/etc/nginx/.htpasswd";
+
+        }
+}
+

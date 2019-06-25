@@ -1,0 +1,34 @@
+- name: install jenkins and nginx
+  script: "{{ script_tyt }}"
+# command: apt-get -y install nginx
+
+- name: configure jenkins
+  template:
+   src: ../template/jenkins_config.j2
+   dest: /etc/default/jenkins
+   owner: root
+   group: root
+   mode: 0644
+
+- name: thpasswd copy
+  copy:
+   src: ../files/.htpasswd
+   dest: /etc/nginx/
+   owner: root
+   group: root
+   mode: 0644
+
+- name: configure nginx
+  template:
+   src: ../template/nginx_config.j2
+   dest: /etc/nginx/sites-enabled/default
+   owner: root
+   group: root
+   mode: 0644
+
+- name: restart jenkins
+  command: sudo systemctl restart jenkins
+
+- name: restart nginx
+  command: sudo service nginx restart
+

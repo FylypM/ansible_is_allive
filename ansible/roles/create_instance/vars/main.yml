@@ -1,0 +1,7 @@
+gcp_project: central-node-241511
+gcp_cred_kind: serviceaccount
+gcp_cred_file: /etc/ansible/roles/create_instance/files/playplay.json
+zone: "europe-west6-a"
+region: "europe-west6"
+ssh_keys: fylyp_malovanyi:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiQiiphFcyy/wNnzKfpli5napJVc4kP00gmLpBZ+VxE82sSMEdaktYXT2zRQLugLbGWn7DeO9AMGnZQYZ1gc2D+6Z/LPYH/Ma7SNchX2kj2R6eWjwVIsnjHT+ED6TT/p53BYMRpHXC3UWxEP0SAFzjfPM8mlHa15s8BJnEDoRackZbrEK/p/FdppVAJeriNb+4tXoIfNJu+rdJ+/Pomqzx8fZ63HREpgo2UW2aNKrN+zMVkEJRz7SzOAUmpo/eml35018xWuAmpTBsuA5/tc8Dq02/jP0mPnM+ODTPJUDdSVUtPf85v9D9UcT9S4CA0f1acYOZe5nlVM6HKT59y/jL fylyp_malovanyi@ansibletest
+
