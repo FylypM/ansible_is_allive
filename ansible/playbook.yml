@@ -3,9 +3,6 @@
 - name: create an instance
   hosts: localhost
   gather_facts: no
-  become: yes
-  become_user: root
-  become_method: sudo
   roles:
    - create_instance
 
