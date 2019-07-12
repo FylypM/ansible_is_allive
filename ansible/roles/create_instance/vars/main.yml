@@ -1,4 +1,4 @@
-gcp_project: central-node-241511
+gcp_project: able-starlight-246507
 gcp_cred_kind: serviceaccount
 gcp_cred_file: /home/fylyp_malovanyi/playplay.json
 zone: "europe-west6-a"
