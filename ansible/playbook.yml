@@ -6,11 +6,11 @@
   roles:
    - create_instance
 
-- name: configure an instance
-  hosts: new_instances
-  connection: ssh
-  become: yes
-  become_user: root
-  become_method: sudo
-  roles:
-   - configure_instance
+//- name: configure an instance
+  //hosts: new_instances
+  //connection: ssh
+  //become: yes
+  //become_user: root
+  //become_method: sudo
+  //roles:
+   //- configure_instance
