@@ -4,7 +4,7 @@
 
 - name: configure jenkins
   template:
-   src: ../templates/jenkins_config.j2
+   src: ../template/jenkins_config.j2
    dest: /etc/default/jenkins
    owner: root
    group: root
@@ -20,7 +20,7 @@
 
 - name: configure nginx
   template:
-   src: ../templates/nginx_config.j2
+   src: ../template/nginx_config.j2
    dest: /etc/nginx/sites-enabled/default
    owner: root
    group: root
