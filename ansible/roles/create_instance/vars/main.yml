@@ -1,6 +1,6 @@
 gcp_project: able-starlight-246507
 gcp_cred_kind: serviceaccount
 gcp_cred_file: /home/fylyp_malovanyi/playplay.json
-zone: europe-west6-a
-region: europe-west6
+zone: "europe-west6-a"
+region: "europe-west6"
 ssh_keys: fylyp_malovanyi:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5EUZCCeXASzT9LxubBOTIlTCjQliTrRu+ONe5RBLcGsWtkAJN4b1u6AbJxk3bdGtrr9jg4MbLjVgZIF1k/Opsan+PpvxOC9d42CjuB8rT5i3NH0KSIidPLNkQIAze804UYcHe1Z3eB6Y5XOl3mNotWPXyX803db3apj0DE+dGwOh5LuHmbHg0lvyfGc7uBqqku/FjRmYzuGINIaUdBbM2Hwg4IIMCVaQ7q6JkTDPa3wgHyhTOxurxzkfYaS3FYrjphDaWidn8DBcq6BG86J1OXRVYVYA+XvdlFcsi6PWHWqoYSAcyB5RwrZ5KuZMGD5Ntl/PFDC/qeOI9bKK9stwZ fylyp_malovanyi@jenkins
