@@ -1,1 +1,1 @@
-script_tyt: /var/lib/jenkins/workspace/test/ansible/roles/configure_instance/files/jenkins.sh
+script_tyt: ../files/jenkins.sh
