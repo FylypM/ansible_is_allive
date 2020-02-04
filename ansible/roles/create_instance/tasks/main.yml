@@ -1,8 +1,8 @@
 - name: create a disk
   gcp_compute_disk:
        name: 'disk-instance'
-       size_gb: 100
-       source_image: 'projects/able-starlight-246507/zones/us-central1-a/diskTypes/pd-ssd'
+       size_gb: 10
+       source_image: 'projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20190514'
        zone: "{{ zone }}"
        project: "{{ gcp_project }}"
        auth_kind: "{{ gcp_cred_kind }}"
@@ -10,7 +10,6 @@
        scopes:
          - https://www.googleapis.com/auth/compute
        state: present
-       type: PERSISTENT
   register: disk
 - name: create a network
   gcp_compute_network:
